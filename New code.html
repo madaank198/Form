@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style>
+
+		#popup{
+			display:none;
+		}
+		.button1{
+			font-size:20px;
+			padding:0.5rem 1.5rem 0.5rem 1.5rem;
+			border:none;
+			color:white;
+			background-color:#1171EE;
+			margin-bottom:1.5rem;
+			margin-top:1.5rem;
+			text-transform:uppercase;
+		}
+		.apply{
+			
+			font-size:20px;
+			padding:0.5rem 1.5rem 0.5rem 1.5rem;
+			border:none;
+			color:white;
+			background-color:#1171EE;
+			margin-bottom:1.5rem;
+			text-transform:uppercase;
+		}
+		.button1:hover,.apply:hover{
+			background: #255784;
+			box-shadow:0 0 10px #2196f3,0 0 40px #2196f3,,0 0 80px #2196f3,;
+		}
+		.name2,.name1{
+			padding:0.5rem;
+			margin:0.5rem;
+			width:13%;
+		}
+		.name{
+			padding:0.5rem;
+			margin:0.5rem;
+			width:15%;
+		}
+		.container{
+			background-color: #678F98;
+			margin:0rem 6rem 2rem 6rem;
+		}
+		.domain{
+			margin-left:-1.3rem;
+		}
+		.mobilenumber{
+			margin-left:-2rem;
+		}
+		.email{
+			margin-left:1.8rem;
+		}
+	</style>
+</head>
+<body bgcolor="#1ecbe1" style="font-family:Lato;">
+<div class=logo_place>
+	<center>
+		<img src="mun.png" height="200" width="500" style="padding:1rem">
+		<h1 style="color:#5924DB">Karan Madaan</h1>
+		
+	</center>
+
+</div><center>
+<button type="button" class="apply" onclick="document.getElementById('popup').style.display='block'">Apply Here</button></center>
+<div id="popup">
+	
+	<form>
+		<center>
+		<div class="container">
+		<label>First Name :</label><input type="textbox" class="name"><br>
+		<label>Last Name :</label> <input type="textbox" class="name"><br>
+		<label>Year :</label>  <select class="name1">
+				<option>2020</option>
+				<option>2019</option>
+				<option>2018</option>
+				<option>2017</option>
+			</select><br>
+		<label class="domain">Domain :</label> <select class="name1">
+				<option>Web Development</option>
+				<option>App Development</option>
+				<option>AI</option>
+				<option>IOT</option>
+			</select><br>
+		<label class="mobilenumber">Mobile Number :</label> <input type="textbox" class="name">
+		<div>		
+		<label class="email">E-mail :</label> <input type="textbox" class="name"><div> 
+			</div>
+		</div>
+		<button type="button" class="button1">Submit</button>
+	</center>
+	</form>
+	
+</div>
+
+
+</body>
+</html>
+		
